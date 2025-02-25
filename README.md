@@ -1,1 +1,1 @@
-# React + Vite Example
+# app-aws-react
