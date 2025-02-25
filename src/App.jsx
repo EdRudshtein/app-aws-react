@@ -1,17 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PostsList from './posts/PostsList';
-import PostDetails from './posts/PostDetails';
-import Navbar from './nav/Navbar';
-import LoginPage from './auth/LoginPage';
-import RegisterPage from './register/RegisterPage';
-import ProtectedRoute from './auth/ProtectedRoute';
-import NotFound from './auth/NotFound';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { AuthProvider } from './auth/AuthContext';
-import UserDogs from './dogs/UserDogs';
+import LoginPage from './auth/LoginPage';
+import NotFound from './auth/NotFound';
+import ProtectedRoute from './auth/ProtectedRoute';
 import DogsAccount from './dogs/DogsAccount';
+import UserDogs from './dogs/UserDogs';
+import Navbar from './nav/Navbar';
+import PostDetails from './posts/PostDetails';
+import PostsList from './posts/PostsList';
+import RegisterPage from './register/RegisterPage';
 
-function App() {
+function App()
+{
   return (
     <Router>
       <AuthProvider>
